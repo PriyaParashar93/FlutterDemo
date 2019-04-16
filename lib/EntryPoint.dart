@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_appasd/src/NavDrawer.dart';
 import 'package:flutter_appasd/src/animation/StickerAnimation.dart';
 import 'package:flutter_appasd/src/animation/saveImageOnCanvas.dart';
+import 'package:flutter_appasd/src/stickers/StickersPage.dart';
 
 void main() => runApp(MyApp());
 
@@ -29,9 +30,9 @@ class MyApp extends StatelessWidget {
       ),
 //      home: NavDrawer(),
 //      home: LinkedInExamplePage(),
-//      home: StickerPage(),
+      home: StickerPage(),
 //      home: SaveImg(title: "Animation",),
-      home: StickerAnim(title: "Animation"),
+//      home: StickerAnim(title: "Animation"),
 
 //      home: HomePageState(),
 //      home: SignupScreen(title: 'Register User'),

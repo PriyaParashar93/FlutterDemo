@@ -90,15 +90,16 @@ class _StickerAnimState extends State<StickerAnim> {
         fit: StackFit.expand,
         children: <Widget>[
           GestureDetector(
-            behavior: HitTestBehavior.opaque,
+            behavior: HitTestBehavior.translucent,
             onTap:_pos==1?null: ()=> setState(() {
                 _pos = 0;
-              }),
+                print('top tapped!');
+
+            }),
             onLongPress: _pos==0?()
             {setState(() {
                if(_pos==0)
                  _pos=1;
-               print('top tapped!');
              });
             }:null,
             onScaleStart: _pos==1 ? null : (detail)=> _handleScaleStart(detail,0),
@@ -114,9 +115,10 @@ class _StickerAnimState extends State<StickerAnim> {
             ),
           ),
           GestureDetector(
-            behavior: HitTestBehavior.opaque,
+            behavior: HitTestBehavior.translucent,
             onTap:_pos==0 ? null: ()=>setState(() {
                 _pos = 1;
+                print('bottom tapped!');
 
               }),
             onLongPress:_pos==1?()
@@ -124,7 +126,6 @@ class _StickerAnimState extends State<StickerAnim> {
               setState(() {
                 if(_pos==1)
                   _pos=0;
-                print('bottom tapped!');
 
 
               });
