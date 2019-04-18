@@ -1,21 +1,54 @@
 PODS:
+  - Fabric (1.9.0)
   - Flutter (1.0.0)
+  - flutter_seekbar (0.0.1):
+    - Flutter
+  - flutter_twitter_login (0.0.1):
+    - Flutter
+    - TwitterKit
+  - flutter_webview_plugin (0.0.1):
+    - Flutter
   - shared_preferences (0.0.1):
     - Flutter
+  - TwitterCore (2.8.0):
+    - Fabric
+  - TwitterKit (2.8.1):
+    - TwitterCore (>= 2.8)
 
 DEPENDENCIES:
   - Flutter (from `.symlinks/flutter/ios`)
+  - flutter_seekbar (from `.symlinks/plugins/flutter_seekbar/ios`)
+  - flutter_twitter_login (from `.symlinks/plugins/flutter_twitter_login/ios`)
+  - flutter_webview_plugin (from `.symlinks/plugins/flutter_webview_plugin/ios`)
   - shared_preferences (from `.symlinks/plugins/shared_preferences/ios`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Fabric
+    - TwitterCore
+    - TwitterKit
 
 EXTERNAL SOURCES:
   Flutter:
     :path: ".symlinks/flutter/ios"
+  flutter_seekbar:
+    :path: ".symlinks/plugins/flutter_seekbar/ios"
+  flutter_twitter_login:
+    :path: ".symlinks/plugins/flutter_twitter_login/ios"
+  flutter_webview_plugin:
+    :path: ".symlinks/plugins/flutter_webview_plugin/ios"
   shared_preferences:
     :path: ".symlinks/plugins/shared_preferences/ios"
 
 SPEC CHECKSUMS:
+  Fabric: f988e33c97f08930a413e08123064d2e5f68d655
   Flutter: 9d0fac939486c9aba2809b7982dfdbb47a7b0296
+  flutter_seekbar: 90570524d9da52fb0923dfd200c85dc1fa75ad72
+  flutter_twitter_login: 3cdd20f570fc128331e773432f8a3c98207ee7cb
+  flutter_webview_plugin: 116575b48572029304775b768e9f15ebfc316274
   shared_preferences: 5a1d487c427ee18fcd3ea1f2a131569481834b53
+  TwitterCore: e959987be23c767004d29eb7fab8d85d8585a2e5
+  TwitterKit: 3b6044a7320340326a4098f3e37aa1dbaeb94942
 
 PODFILE CHECKSUM: aff02bfeed411c636180d6812254b2daeea14d09
 
